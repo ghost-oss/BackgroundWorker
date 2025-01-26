@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "BackgroundWorker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    }
+  }
+}
