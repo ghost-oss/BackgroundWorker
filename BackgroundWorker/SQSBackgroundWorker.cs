@@ -16,7 +16,7 @@ public class SQSBackgroundWorker : BackgroundService
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         var queueUrl = await SqsService.GetOrCreateQueueUrlAsync("TEST_QUEUE");
-        
+
         while (!stoppingToken.IsCancellationRequested)
         {
             logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);

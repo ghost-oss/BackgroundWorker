@@ -9,7 +9,7 @@ using BackgroundWorker.AWSExtentions;
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureHostConfiguration(configurationBuilder =>
     {
-        configurationBuilder.AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", false, true);
+        configurationBuilder.AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", true, true);
     })
     .ConfigureServices((context, services) =>
     {

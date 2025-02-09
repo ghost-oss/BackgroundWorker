@@ -2,7 +2,7 @@
 
 namespace BackgroundWorker.AWSExtentions
 {
-	public static class AWSExtensions
+    public static class AWSExtensions
 	{
 		public static IServiceCollection ConfigureAWSServices(this IServiceCollection services, IConfiguration configuration)
 		{
